@@ -1,18 +1,18 @@
 package Databasetesting.Databasetesting;
 
-import java.io.FileInputStream;
 import java.time.Duration;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class DataTesting extends Databaseutilities {
 	static WebDriver driver;
-	public static void main(String[] args) {
+	@Test
+	public static void datatesting() {
 		try {
 			properties.load(file);
 			driver = new ChromeDriver();
